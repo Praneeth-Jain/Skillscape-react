@@ -7,59 +7,59 @@ const Landing = () => {
   const comp=useRef(null)
   const comp2=useRef(null)
   const comp3=useRef(null)
-  useLayoutEffect(()=>{
-    let ctx=gsap.context(()=>{
-      const t1=gsap.timeline()
-      t1.to("#intro-slider",{
-        xPercent:"-100",
-        duration:1.3,
-        delay:0.5,
-     }).from("#title",{
-      y:"-=30",
-      delay:0.6,
-      opacity:1,
-     })
-     .to("#title",{
-      opacity:0,
-      stagger:0.5,
-      delay:0.3,
-      scale:"1.1"
-     }).to("#text1",{
-      y:"+=60",
-      duration:1.5,
-      delay:-0.8,
-      scale:"1.05",
-     }).to("#text2",{
-      y:"+=80",
-      duration:1.3,
-      stagger:0.3,
-      scale:"1.1",
-      delay:0.2
-     })
-      return ()=>ctx.revert()
-    },comp)
+ // useLayoutEffect(()=>{
+ //   let ctx=gsap.context(()=>{
+ //     const t1=gsap.timeline()
+   //   t1.to("#intro-slider",{
+  //      xPercent:"-100",
+  //      duration:1.3,
+  //      delay:0.5,
+   //  }).from("#title",{
+   //   y:"-=30",
+   //   delay:0.6,
+   //   opacity:1,
+   })
+   //  .to("#title",{
+    //  opacity:0,
+    //  stagger:0.5,
+    //  delay:0.3,
+   //   scale:"1.1"
+   //  }).to("#text1",{
+   //   y:"+=60",
+   //   duration:1.5,
+   //   delay:-0.8,
+   //   scale:"1.05",
+  //   }).to("#text2",{
+  //    y:"+=80",
+   //   duration:1.3,
+   //   stagger:0.3,
+   //   scale:"1.1",
+  //    delay:0.2
+ //  })
+  //    return ()=>ctx.revert()
+  //  },comp)
 
-   },[])
-   useLayoutEffect(()=>{
-    let ctx=gsap.context(()=>{
-      const t2=gsap.timeline()
-      t2.to("#lorem",{
-        xPercent:"-10",
-        x:"+=40",
-        duration:1.5,
-        delay:8,
-        scale:"0.8"
-    }).to("#btn",{
-      y:"-=30",
-      x:"-=40",
-      scale:"1.1",
-      duration:0.5,
-      delay:0.2
-    })
-    return ()=>ctx.revert()
-    },comp2)
-   },[])
-
+//   },[])
+ //  useLayoutEffect(()=>{
+ //   let ctx=gsap.context(()=>{
+  //    const t2=gsap.timeline()
+   //   t2.to("#lorem",{
+   //     xPercent:"-10",
+    //    x:"+=40",
+    //    duration:1.5,
+    //    delay:8,
+   //     scale:"0.8"
+  //  }).to("#btn",{
+//    y:"-=30",
+   //   x:"-=40",
+  //    scale:"1.1",
+  //    duration:0.5,
+  //    delay:0.2
+ //   })
+  //  return ()=>ctx.revert()
+ //   },comp2)
+ //  },[])
+//
   //  useLayoutEffect(()=>{
   //   let ctx=gsap.context(()=>{
   //     const t=gsap.timeline()
